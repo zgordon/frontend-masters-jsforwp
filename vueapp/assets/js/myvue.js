@@ -2,8 +2,8 @@ new Vue({
     el: '#vueapp',
     data: {
         isSingle: false,
-        posts: '',
-        post: '',
+        posts: [],
+        post: {},
     },
     methods: {
         showPost( post ) {
