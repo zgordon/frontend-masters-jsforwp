@@ -20,16 +20,14 @@ new Vue({
             return `${this.siteURL}/wp-json/wp/v2/posts?per_page=3`;
         }
     },
-        let posts = this.$http.get( jsforwp_vars.site_url + '/wp-json/wp/v2/posts?per_page=3').then(response => {
-
-            // get body data
-            // console.log( response.body );
-            this.posts = response.body;
-
-        }, response => {
-            // error callback
-        });
     created() {
         console.log( this.siteURL );
+        axios.get( this.restEndpoint )
+          .then( response => this.posts = response.data )
+          .catch( error => {
+              alert('There was an error in your request');
+              console.error( error.response.data.message );
+            }
+        );
     }
 });
