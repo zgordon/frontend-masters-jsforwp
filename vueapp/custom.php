@@ -21,14 +21,14 @@
 
             <ul v-if="!isSingle">
                 <li v-for="post in posts" :key="post.id">
-                    <a v-bind:href="'#/'+post.slug" v-on:click="showPost( post )">
+                    <a :href="'#/'+post.slug" @click="showPost(post)">
                         {{ post.title.rendered }}
                     </a>
                 </li>
             </ul>
 
-                <p><a href="#/" v-on:click="showPosts"><< Back to Posts</a></p>
             <div v-else>
+                <p><a href="#/" @click="showPosts"><< Back to Posts</a></p>
                 <h2 v-text="post.title.rendered"></h2>
                 <div v-html="post.content.rendered"></div>
             </div>
