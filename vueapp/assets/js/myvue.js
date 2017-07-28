@@ -1,4 +1,4 @@
-let vm = new Vue({
+new Vue({
     el: '#vueapp',
     data: {
         isSingle: false,
