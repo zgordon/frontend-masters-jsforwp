@@ -6,15 +6,14 @@ let vm = new Vue({
         post: '',
     },
     methods: {
-        showPost: function( post ) {
+        showPost( post ) {
             this.post = post;
             this.isSingle = true;
         },
-        showPosts: function () {
+        showPosts() {
             this.isSingle = false;
         },
     },
-    created: function () {
         console.log( jsforwp_vars.site_url );
         let posts = this.$http.get( jsforwp_vars.site_url + '/wp-json/wp/v2/posts?per_page=3').then(response => {
 
@@ -25,5 +24,6 @@ let vm = new Vue({
         }, response => {
             // error callback
         });
+    created() {
     }
 });
