@@ -32,6 +32,7 @@
                 <h2 v-text="post.title.rendered"></h2>
                 <div v-html="post.content.rendered"></div>
             </div>
+
           </div>
 
         </article>
