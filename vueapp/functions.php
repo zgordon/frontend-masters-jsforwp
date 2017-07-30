@@ -21,11 +21,9 @@ add_action( 'wp_enqueue_scripts', 'wphierarchy_enqueue_styles' );
 function wphierarchy_enqueue_scripts() {
 
   if ( is_page_template( 'custom.php' ) ) {
-
-    wp_enqueue_script( 'vue-js', 'https://unpkg.com/vue@2.4.1', [], null, true );
-    wp_enqueue_script( 'vue-resource', 'https://cdn.jsdelivr.net/npm/vue-resource@1.3.4', [], null, true );
-    wp_enqueue_script( 'my-vue-js', get_stylesheet_directory_uri() . '/assets/js/myvue.js', [ 'vue-js','vue-resource'
-     ], time(), true );
+    wp_enqueue_script( 'axios', 'https://unpkg.com/axios/dist/axios.min.js', [], null, true );
+    wp_enqueue_script( 'vue-js', 'https://unpkg.com/vue@2.4.1', [ 'axios' ], null, true );
+    wp_enqueue_script( 'my-vue-js', get_stylesheet_directory_uri() . '/assets/js/myvue.js', [ 'vue-js' ], time(), true );
 
     wp_localize_script('my-vue-js', 'jsforwp_vars', array(
             'site_url' => esc_url( site_url() )
