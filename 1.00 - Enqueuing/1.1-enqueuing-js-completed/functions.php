@@ -10,10 +10,10 @@ add_theme_support( 'automatic-feed-links' );
 // Load in our JS
 function jsforwp_enqueue_scripts() {
 
-  // Change '/path/to/file.js' to '/assets/js/theme.js'
+  // Change 'path/to/file.js' to '/assets/js/theme.js'
    wp_enqueue_script(
      'theme-js',
-     get_stylesheet_directory_uri() . '/path/to/file.js',
+     get_stylesheet_directory_uri() . '/assets/js/theme.js',
      [],
      time(),
      true
