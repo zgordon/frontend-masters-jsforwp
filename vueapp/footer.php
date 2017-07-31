@@ -5,7 +5,7 @@
 
     <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wphierarchy' ) ); ?>">
       <?php printf( esc_html__( 'Proudly powered by %s', 'wphierarchy' ), 'WordPress' ); ?>
-    </a>
+    </a>    
 
   </footer>
 

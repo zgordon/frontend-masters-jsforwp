@@ -8,3 +8,5 @@
 4. Make the *second* wp_enqueue_script() dependent on "jsforwp-vue-js"
 5. Locate the jsforwp_remove_ver_from_cdn() function
 6. Change 'cdn.com' to 'unpkg.com'
+7. Activate the theme and load in the browser
+8. Look for "Vue Footer Loaded!" message in the footer

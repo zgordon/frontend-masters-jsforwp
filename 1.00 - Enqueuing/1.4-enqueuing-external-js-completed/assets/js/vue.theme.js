@@ -1,5 +1,6 @@
 new Vue({
-    created() {
-        console.log( 'Vue App Loaded!' );
-    }
+  el: '#vue-footer',
+  data: {
+    footerMsg: 'Vue Footer Loaded!'
+  }
 });
