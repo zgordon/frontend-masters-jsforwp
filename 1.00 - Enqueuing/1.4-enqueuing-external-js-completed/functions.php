@@ -10,18 +10,40 @@ add_theme_support( 'automatic-feed-links' );
 // Load in our JS
 function jsforwp_enqueue_scripts() {
 
-  // Change '/path/to/file.js' to '/assets/js/theme.js'
-   wp_enqueue_script(
-     'jsforwp-theme-js',
-     get_stylesheet_directory_uri() . '/path/to/file.js',
-     [],
-     time(),
-     true
-   );
+  // Change 'https://cdn.com/for/vue.js' to 'https://unpkg.com/vue@2.4.1'
+  wp_enqueue_script(
+    'jsforwp-vue-js',
+    'https://unpkg.com/vue@2.4.1',
+    [],
+    time(),
+    true
+  );
+
+  // Change 'dependency-handle-here' to 'jsforwp-vue-js'
+  wp_enqueue_script(
+    'jsforwp-vue-theme-js',
+    get_stylesheet_directory_uri() . '/assets/js/vue.theme.js',
+    [ 'jsforwp-vue-js' ],
+    time(),
+    true );
 
 }
 add_action( 'wp_enqueue_scripts', 'jsforwp_enqueue_scripts' );
 
+
+// Remove version number from CDN urls (adopted from https://goo.gl/WMJ1dH)
+function jsforwp_remove_ver_from_cdn( $src ) {
+
+    //Change 'cdn.com' to 'unpkg.com'
+    if ( strpos( $src, 'unpkg.com' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+
+}
+add_filter( 'script_loader_src', 'jsforwp_remove_ver_from_cdn', 9999 );
+
+// Optionally uncomment the line below to also apply filter to CSS
+// add_filter( 'style_loader_src', 'jsforwp_remove_ver_from_cdn', 9999 );
 
 // Load in our CSS
 function jsforwp_enqueue_styles() {
