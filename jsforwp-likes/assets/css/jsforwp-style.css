@@ -1,0 +1,12 @@
+.jsforwp-like .dashicons-thumbs-up:before {
+  color: #ccc;
+}
+.jsforwp-like:hover .dashicons-thumbs-up:before {
+  color: #92ed90;
+}
+.jsforwp-like.liked .dashicons-thumbs-up:before {
+  color: #03c600;
+}
+.jsforwp-like {
+  text-decoration: none;
+}
