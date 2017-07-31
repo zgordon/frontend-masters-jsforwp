@@ -4,13 +4,10 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
 1. Enqueuing JavaScript
   - 1.1 PRACTICE ✔️ - Enqueuing JavaScript
   - 1.2 PRACTICE ✔️ - Enqueuing Multiple JavaScript Files (and Making Dependencies)
-  - 1.3 PRACTICE - Making jQuery a Dependency (and jQuery Wrapper)
+  - 1.3 PRACTICE ✔️ - Making jQuery a Dependency (and jQuery Wrapper)
   - 1.4 PRACTICE ✔️ - Enqueuing External JavaScript (remove Version)  
-  - 1.4 PRACTICE - Conditionally Enqueuing JavaScript
+  - 1.5 PRACTICE - Conditionally Enqueuing JavaScript
   - 1.5 PRACTICE - Enqueuing JavaScript in a Plugin
-2. jQuery in WordPress
-  - 2.1 PRACTICE - Making jQuery a Dependency
-  - 2.2 PRACTICE - jQuery Wrapper
 3. AJAX in WordPress
   - 3.1 PRACTICE - jQuery AJAX Call (That does nothing)  
   - 3.2 PRACTICE - AJAX with a Like Plugin
