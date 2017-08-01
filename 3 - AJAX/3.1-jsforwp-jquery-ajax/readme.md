@@ -12,19 +12,20 @@
 7. Find add_action function directly after jsforwp_add_like()
 8. Change 'wp_ajax_your_hook' to 'wp_ajax_jsforwp_add_like'
 9. Change 'your_hook' to 'jsforwp_add_like'
+10. Inside of jsforwp_add_like(), change the parameter of check_ajax_referer() to 'jsforwp_likes_nonce'
 
 ### Step 3 - The jQuery AJAX Call
-10. Open up '/assets/js/frontend-main.js'
-11. Look for the $.ajax() function
-12. Change url to jsforwp_globals.ajax_url
-13. Change data.action to 'jsforwp_add_like'
-14. Change data.nonce to jsforwp_globals.nonce
-15. Inside of the AJAX success method, change the html() value to response.total_likes
+11. Open up '/assets/js/frontend-main.js'
+12. Look for the $.ajax() function
+13. Change url to jsforwp_globals.ajax_url
+14. Change data.action to 'jsforwp_add_like'
+15. Change data.\_ajax_nonce to jsforwp_globals.nonce
+16. Inside of the AJAX success method, change the html() value to response.total_likes
 
 ### Testing
-16. Activate the plugin and open the site in the browser
-17. Click on the "Like this Site" link
-18. The number of likes should increase by 1 with each click
+17. Activate the plugin and open the site in the browser
+18. Click on the "Like this Site" link
+19. The number of likes should increase by 1 with each click
 
 ### Bonus
 At the bottom of 'jsforwp-ajax.php' there is a require statement that pulls in more plugin code.

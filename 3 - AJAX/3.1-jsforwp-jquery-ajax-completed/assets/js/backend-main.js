@@ -9,7 +9,7 @@
       url : jsforwp_globals.ajax_url,
       data : {
         action: 'jsforwp_reset_likes',
-        nonce: jsforwp_globals.nonce
+        _ajax_nonce: jsforwp_globals.nonce
       },
       success: function( response ) {
          if( 'success' == response.type ) {

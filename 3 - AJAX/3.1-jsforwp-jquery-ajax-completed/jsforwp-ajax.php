@@ -47,10 +47,8 @@ add_action( 'wp_enqueue_scripts', 'jsforwp_frontend_scripts' );
 
 function jsforwp_add_like( ) {
 
-
-  if ( !wp_verify_nonce( $_REQUEST['nonce'], 'jsforwp_likes_nonce' )) {
-     exit( 'Nope.' );
-  }
+  // Change the parameter of check_ajax_referer() to 'jsforwp_likes_nonce'
+  check_ajax_referer( 'jsforwp_likes_nonce' );
 
   $likes = intval( get_option( 'jsforwp_likes' ) );
   $new_likes = $likes + 1;

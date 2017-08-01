@@ -49,9 +49,8 @@ function jsforwp_backend_scripts( $hook ) {
 add_action( 'admin_enqueue_scripts', 'jsforwp_backend_scripts' );
 
 function jsforwp_reset_likes( ) {
-  if ( !wp_verify_nonce( $_REQUEST['nonce'], 'jsforwp_likes_reset' )) {
-     exit( 'Nope.' );
-  }
+
+  check_ajax_referer( 'jsforwp_likes_reset' );
 
   update_option( 'jsforwp_likes', 0 );
 

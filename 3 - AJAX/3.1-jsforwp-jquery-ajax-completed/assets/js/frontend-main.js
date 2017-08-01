@@ -11,14 +11,14 @@
 
     // Change url to jsforwp_globals.ajax_url
     // Change data.action to 'jsforwp_add_like'
-    // Change data.nonce to jsforwp_globals.nonce
+    // Change data._ajax_nonce to jsforwp_globals.nonce
     $.ajax({
       type : 'post',
       dataType : 'json',
       url : jsforwp_globals.ajax_url,
       data : {
         action: 'jsforwp_add_like',
-        nonce: jsforwp_globals.nonce
+        _ajax_nonce: jsforwp_globals.nonce
       },
       success: function( response ) {
 
