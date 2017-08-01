@@ -1,4 +1,4 @@
-# Frontend Masters "JavaScript for WordPress" w Zac Gordon
+# Frontend Masters: JavaScript for WordPress Course
 
 ## Example Exercises
 
