@@ -1,6 +1,6 @@
 <?php
 
-$main_menu_url = 'jsforwp-likes-3-1-completed';
+$main_menu_url = 'jsforwp-likes-3-1';
 
 function jsforwp_admin_menu() {
   global $main_menu_url;
