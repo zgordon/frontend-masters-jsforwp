@@ -1,9 +1,10 @@
 <?php
 /*
-   Plugin Name: 2.1 - Enqueuing Frontend JavaScript (Completed)
+   Plugin Name: 2.1 - Enqueuing Frontend JavaScript
    Version: 1.0.0
    Author: Zac Gordon
-   Description: Example of how to load JavaScript on the frontend of a WordPress site using from a plugin
+   Author URI: https://twitter.com/zgordon
+   Description: Learn how to load JavaScript on the frontend of a WordPress site using from a plugin
    Text Domain: jsforwp-loadjs
    License: GPLv3
 */
