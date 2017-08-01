@@ -1,4 +1,7 @@
-# Frontend Master Course Resources: JavaScript for WordPress w Zac Gordon
+# Frontend Masters "JavaScript for WordPress" w Zac Gordon
+
+## Example Exercises
+
 Example files for Frontend Masters Class JavaScript for WordPress Course
 
 1. Enqueuing JavaScript in a Theme
@@ -11,7 +14,7 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
 2. Enqueuing JavaScript in a Plugin
   - 2.1 PRACTICE ✔️ - Enqueuing Frontend JavaScript in a Plugin
   - 2.2 PRACTICE ✔️ - Enqueuing Backend JavaScript with a Plugin
-  - 2.3 PRACTICE ✔️ - Enqueuing Plugin Page JavaScript 
+  - 2.3 PRACTICE ✔️ - Enqueuing Plugin Page JavaScript
 3. AJAX in WordPress
   - 3.1 PRACTICE - jQuery AJAX Call (That does nothing)  
   - 3.2 PRACTICE - AJAX with a Like Plugin
