@@ -9,7 +9,7 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 1.5 PRACTICE ✔️ - Conditionally Enqueuing JavaScript
   - 1.6 PRACTICE ✔️ - Localizing Scripts
 2. Enqueuing JavaScript in a Plugin
-  - 2.1 PRACTICE - Enqueuing Frontend JavaScript in a Plugin
+  - 2.1 PRACTICE ✔️ - Enqueuing Frontend JavaScript in a Plugin
   - 2.2 PRACTICE - Enqueuing Backend JavaScript in a Plugin
 3. AJAX in WordPress
   - 3.1 PRACTICE - jQuery AJAX Call (That does nothing)  
