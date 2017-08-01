@@ -17,7 +17,7 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 2.3 PRACTICE ✔️ - Enqueuing Plugin Page JavaScript
 3. AJAX in WordPress
   - 3.1 PRACTICE ✔️ - jQuery AJAX
-  - 3.2 PRACTICE - Axios AJAX
+  - 3.2 PRACTICE ✔️ - Axios AJAX
 4. WordPress REST API
   - 4.1 PRACTICE - Accessing Endpoints in the Browser
   - 4.1 PRACTICE - Accessing Endpoints with Parameters in the Browser
