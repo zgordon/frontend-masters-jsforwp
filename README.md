@@ -27,8 +27,12 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 5.2 PRACTICE ✔️ - Listing API Posts Based on Arguments
   - 5.3 PRACTICE - Accessing Custom Endpoints
   - 5.4 PRACTICE ✔️ - Saving Posts via API
+  - 5.5 PRACTICE - Editing Posts via API
+  - 5.6 PRACTICE - Saving Posts via API
 6. Using the WP REST API Outside of WordPress
-  - 5.1 PRACTICE - Node API Client List Posts
-  - 5.2 PRACTICE - Node API Client Basic Auth
-  - 5.1 PRACTICE - jQuery List Posts
-  - 5.2 PRACTICE - JWT Decoupled Authentication for Add Post
+  - 5.1 PRACTICE - Listing Posts
+  - 5.2 PRACTICE - Listing API Posts Based on Arguments  
+  - 5.3 PRACTICE - JWT Decoupled Authentication
+  - 5.4 PRACTICE - Saving Posts via API
+  - 5.5 PRACTICE - Editing Posts via API
+  - 5.6 PRACTICE - Deleting Posts via API
