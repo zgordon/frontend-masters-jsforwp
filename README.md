@@ -25,8 +25,8 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
 5. Using the WP REST API Inside WordPress
   - 5.1 PRACTICE ✔️ - Listing API Posts
   - 5.2 PRACTICE ✔️ - Listing API Posts Based on Arguments
-  - 5.3 PRACTICE - Backbone Client Edit Posts    
-  - 5.4 PRACTICE - Backbone Client Delete Posts    
+  - 5.3 PRACTICE - Accessing Custom Endpoints
+  - 5.4 PRACTICE ✔️ - Saving Posts via API
 6. Using the WP REST API Outside of WordPress
   - 5.1 PRACTICE - Node API Client List Posts
   - 5.2 PRACTICE - Node API Client Basic Auth
