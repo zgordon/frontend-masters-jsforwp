@@ -21,7 +21,7 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
 4. The WordPress REST API
   - 4.1 PRACTICE ✔️ - Accessing WP API Endpoints in the Browser
   - 4.2 PRACTICE ✔️ - Accessing WP API Endpoints with Arguments in the Browser
-  - 4.3 PRACTICE - Accessing Custom Endpoints in the Browser
+  - 4.3 PRACTICE ✔️ - Accessing Custom Endpoints in the Browser
 5. Accessing the WP REST API Inside WordPress
   - 5.1 PRACTICE - jQuery List Posts
   - 5.2 PRACTICE - jQuery Add Post
