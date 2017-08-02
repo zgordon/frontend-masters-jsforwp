@@ -22,12 +22,12 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 4.1 PRACTICE ✔️ - Accessing WP API Endpoints in the Browser
   - 4.2 PRACTICE ✔️ - Accessing WP API Endpoints with Arguments in the Browser
   - 4.3 PRACTICE ✔️ - Accessing Custom Endpoints in the Browser
-5. Accessing the WP REST API Inside WordPress
-  - 5.1 PRACTICE - jQuery List Posts
-  - 5.2 PRACTICE - jQuery Add Post
-  - 5.3 PRACTICE - Backbone Client List Posts
-  - 5.4 PRACTICE - Backbone Client Add Post  
-6. Accessing the WP REST API Outside of WordPress
+5. Using the WP REST API Inside WordPress
+  - 5.1 PRACTICE ✔️ - Listing API Posts
+  - 5.2 PRACTICE ✔️ - Listing API Posts Based on Arguments
+  - 5.3 PRACTICE - Backbone Client Edit Posts    
+  - 5.4 PRACTICE - Backbone Client Delete Posts    
+6. Using the WP REST API Outside of WordPress
   - 5.1 PRACTICE - Node API Client List Posts
   - 5.2 PRACTICE - Node API Client Basic Auth
   - 5.1 PRACTICE - jQuery List Posts
