@@ -18,12 +18,17 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
 3. AJAX in WordPress
   - 3.1 PRACTICE ✔️ - jQuery AJAX
   - 3.2 PRACTICE ✔️ - Axios AJAX
-4. WordPress REST API
-  - 4.1 PRACTICE - Accessing Endpoints in the Browser
-  - 4.1 PRACTICE - Accessing Endpoints with Parameters in the Browser
-  - 4.3 PRACTICE - Simple List of Posts
-  - 4.4 PRACTICE - Custom Endpoints
-5. WP API Authentication w JavaScript
-  - 5.1 PRACTICE - jQuery with Nonce
-  - 5.2 PRACTICE - Backbone API?
-  - 5.3 PRACTICE - Decoupled Authentication with JWT
+4. The WordPress REST API
+  - 4.1 PRACTICE ✔️ - Accessing WP API Endpoints in the Browser
+  - 4.2 PRACTICE ✔️ - Accessing WP API Endpoints with Arguments in the Browser
+  - 4.3 PRACTICE - Accessing Custom Endpoints in the Browser
+5. Accessing the WP REST API Inside WordPress
+  - 5.1 PRACTICE - jQuery List Posts
+  - 5.2 PRACTICE - jQuery Add Post
+  - 5.3 PRACTICE - Backbone Client List Posts
+  - 5.4 PRACTICE - Backbone Client Add Post  
+6. Accessing the WP REST API Outside of WordPress
+  - 5.1 PRACTICE - Node API Client List Posts
+  - 5.2 PRACTICE - Node API Client Basic Auth
+  - 5.1 PRACTICE - jQuery List Posts
+  - 5.2 PRACTICE - JWT Decoupled Authentication for Add Post
