@@ -1,4 +1,4 @@
-# 5.7 - Webpack with Browsersync
+# 5.8 - Webpack with Browsersync
 
 This is a demonstration of how to configure webpack with Browsersync to automatically reload your WordPress site when JavaScript is used.
 
