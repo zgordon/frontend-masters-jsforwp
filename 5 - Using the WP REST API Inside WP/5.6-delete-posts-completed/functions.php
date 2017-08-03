@@ -28,18 +28,16 @@ function jsforwp_enqueue_scripts() {
     );
 
     $logged_in = false;
-
     if( is_user_logged_in() && current_user_can( 'edit_others_posts' ) ) {
         $logged_in = true;
     }
 
-    // Change 'LOGGED_IN' to $logged_in
     wp_localize_script(
-        'jsforwp-theme-js',
-        'jsforwp_vars',
-        [
-          'logged_in' => 'LOGGED_IN'
-        ]
+      'jsforwp-theme-js',
+      'jsforwp_vars',
+      [
+        'logged_in' => $logged_in
+      ]
     );
 
   }

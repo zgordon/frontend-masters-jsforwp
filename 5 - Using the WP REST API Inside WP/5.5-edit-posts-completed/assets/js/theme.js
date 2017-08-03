@@ -84,7 +84,11 @@
         article.classList.add( 'post' );
         article.dataset.id = post.id;
         article.innerHTML = markup;
-        article.append( getEditLink() );
+
+        // Set LOGGED_IN to jsforwp_vars.logged_in
+        if ( true == jsforwp_vars.logged_in ) {
+            article.append( getEditLink() );
+        }
         appContainer.append( article );
 
     }

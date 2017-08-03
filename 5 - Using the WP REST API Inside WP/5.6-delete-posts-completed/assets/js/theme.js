@@ -2,12 +2,39 @@
 
     (function init() {
 
-        newPostBtn.addEventListener( 'click', togglePostForm );
-        savePostBtn.addEventListener( 'click', savePost );
+        if ( true == jsforwp_vars.logged_in ) {
+            newPostBtn.addEventListener( 'click', togglePostForm );
+            savePostBtn.addEventListener( 'click', savePost );
+        }
 
-        loadPosts();
+        wp.api.loadPromise.done( () => {
+            loadPosts();
+        } );
 
     })();
+
+    function deletePost( event ) {
+
+        let title = event.target.parentElement.querySelector( '.entry-title a' ).innerText,
+            id = event.target.parentElement.dataset.id,
+            confirm = window.confirm( `Delete Post: "${title}"` );
+
+        event.preventDefault();
+
+        if ( true === confirm ) {
+
+            // Change POST_ID_OBJECT to '{ id : id }'
+            let post = new wp.api.models.Post( { id } );
+
+            // Change DELETE_POST() to post.destroy()
+            post.destroy()
+                .done( () => {
+                    loadMessage( 'deleted' );
+                    loadPosts();
+                } );
+        }
+
+    }
 
     function loadEditForm( event ) {
 
@@ -18,12 +45,9 @@
         event.preventDefault();
         togglePostForm();
 
-        // Change TITLE_HERE to title
-        // Change CONTENT_HERE to content
-        // Change ID_HERE to id
-        formTitle.value = TITLE_HERE;
-        tinyMCE.activeEditor.setContent( CONTENT_HERE );
-        savePostBtn.dataset.id = ID_HERE;
+        formTitle.value = title;
+        tinyMCE.activeEditor.setContent( content );
+        savePostBtn.dataset.id = id;
 
     }
 
@@ -38,16 +62,14 @@
             postId = savePostBtn.dataset.id,
             currentPost = {};
 
-        // Change POST_ID_OBJECT to { id: postId }
         if ( '' !== postId ) {
-            currentPost = POST_ID_OBJECT;
+            currentPost = { id: postId };
         }
 
         event.preventDefault();
         togglePostForm();
 
-        // Change CURRENT_POST_HERE to currentPost
-        post.save( CURRENT_POST_HERE )
+        post.save( currentPost )
             .done( () => {
                 loadMessage( 'saved' );
                 clearForm();
@@ -84,9 +106,8 @@
         article.classList.add( 'post' );
         article.dataset.id = post.id;
         article.innerHTML = markup;
-        // Set LOGGED_IN to jsforwp_vars.logged_in
-        if ( true == LOGGED_IN ) {
-            article.append( getEditLink() );
+        if ( true == jsforwp_vars.logged_in ) {
+            article.append( getEditLink(), getDeleteLink() );
         }
         appContainer.append( article );
 
@@ -99,8 +120,22 @@
         link.href = '#edit-post';
         link.innerText = 'Edit';
 
-        // Change LOAD_FORM_FUNCTION to loadEditForm
-        link.addEventListener( 'click', LOAD_FORM_FUNCTION );
+        link.addEventListener( 'click', loadEditForm );
+
+        return link;
+
+    }
+
+    function getDeleteLink() {
+
+        let link = document.createElement( 'a' );
+
+        link.href = '#delete-post';
+        link.innerText = 'Delete';
+        link.classList.add( 'delete-post' )
+
+        // Change DELETE_POST_FUNCTION to deletePost
+        link.addEventListener( 'click', deletePost );
 
         return link;
 

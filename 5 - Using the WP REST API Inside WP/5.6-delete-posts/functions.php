@@ -12,33 +12,19 @@ function jsforwp_enqueue_scripts() {
 
   if( is_page_template( 'custom.php' ) ) {
 
-    wp_enqueue_script(
-      'jsforwp-helpers-js',
-      get_stylesheet_directory_uri() . '/assets/js/helpers.js',
-      [],
-      time(),
-      true
-    );
-    wp_enqueue_script(
-      'jsforwp-theme-js',
-      get_stylesheet_directory_uri() . '/assets/js/theme.js',
-      [ 'wp-api', 'jsforwp-helpers-js' ],
-      time(),
-      true
-    );
+    wp_enqueue_script( 'jsforwp-helpers-js', get_stylesheet_directory_uri() . '/assets/js/helpers.js', [], time(), true );
+    wp_enqueue_script( 'jsforwp-theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [ 'wp-api', 'jsforwp-helpers-js' ], time(), true );
 
     $logged_in = false;
-
     if( is_user_logged_in() && current_user_can( 'edit_others_posts' ) ) {
         $logged_in = true;
     }
 
-    // Change 'LOGGED_IN' to $logged_in
     wp_localize_script(
         'jsforwp-theme-js',
         'jsforwp_vars',
         [
-          'logged_in' => 'LOGGED_IN'
+          'logged_in' => $logged_in
         ]
     );
 
