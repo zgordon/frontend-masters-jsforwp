@@ -31,6 +31,7 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 5.6 PRACTICE ✔️ - Deleting Posts via API
   - 5.7 DEMO ✔️ - Using Axios instead of Backbone Client
   - 5.8 DEMO ✔️ - Webpack and Browsersync with WordPress
+  - 5.9 DEMO ✔️ - Vue and API in a Theme
 6. Using the WP REST API Outside of WordPress
   - 6.1 PRACTICE ✔️ - Showing Listing of Posts
   - 6.2 PRACTICE ✔️ - Showing Single Posts
