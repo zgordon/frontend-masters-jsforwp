@@ -32,9 +32,9 @@ Example files for Frontend Masters Class JavaScript for WordPress Course
   - 5.7 DEMO ✔️ - Using Axios instead of Backbone Client
   - 5.8 DEMO ✔️ - Webpack and Browsersync with WordPress
 6. Using the WP REST API Outside of WordPress
-  - 6.1 PRACTICE - Listing Posts
-  - 6.2 PRACTICE - Listing Posts with Arguments  
-  - 6.3 PRACTICE - JWT Decoupled Authentication
-  - 6.4 PRACTICE - Saving Posts via API
-  - 6.5 PRACTICE - Editing Posts via API
-  - 6.6 PRACTICE - Deleting Posts via API
+  - 6.1 PRACTICE ✔️ - Showing Listing of Posts
+  - 6.2 PRACTICE ✔️ - Showing Single Posts
+  - 6.3 PRACTICE ✔️ - JWT Decoupled Authentication
+  - 6.4 PRACTICE ✔️ - Saving Posts via API
+  - 6.5 PRACTICE ✔️ - Editing Posts via API
+  - 6.6 PRACTICE ✔️ - Deleting Posts via API

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Decoupled WordPress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="page">
+
+    <header id="masthead" class="site-header" role="banner">
+
+        <div class="site-branding">
+            <p class="site-title">
+                <a href="/" rel="home">
+                    Decoupled WordPress
+                </a>
+            </p>
+            <p class="site-description">
+                Accessing the API Outside of WordPress
+            </p>
+        </div>
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+        </nav>
+
+    </header>
+
+    <div id="content" class="site-content">
+
+        <div id="primary" class="content-area">
+
+            <main id="main" class="site-main" role="main">
+
+            </main>
+
+        </div>
+
+
+        <aside id="secondary" class="widget-area" role="complementary">
+
+            <div class="widget">
+
+                <h3>Welcome!</h3>
+                <p>This site is built with JavaScript.</p>
+
+            </div>
+
+            <div class="widget">
+
+                <form class="login-form hidden" action="" method="post">
+                    <h3>Login</h3>
+                    <p><label for="username">Username:</label></p>
+                    <p><input class="username" type="text" name="username" value=""></p>
+                    <p><label for="password">Password:</label></p>
+                    <p><input class="password" type="password" name="password" value=""></p>
+                    <p><input class="button submit" type="submit" name="" value="Login"></p>
+                </form>
+
+                <form class="logout-form hidden" action="" method="post">
+                    <input class="button submit" type="submit" name="" value="Logout">
+                </form>
+
+
+            </div>
+
+        </aside>
+
+    </div><!-- #content -->
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+
+        <p>Proudly powered with JavaScript and WordPress.</p>
+
+    </footer>
+
+</div><!-- #page -->
+
+<script src="bundle.min.js"></script>
+
+</body>
+</html>

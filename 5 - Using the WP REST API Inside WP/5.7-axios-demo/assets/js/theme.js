@@ -7,9 +7,7 @@
             savePostBtn.addEventListener( 'click', savePost );
         }
 
-        wp.api.loadPromise.done( () => {
-            loadPosts();
-        } );
+        loadPosts();
 
     })();
 
@@ -142,7 +140,7 @@
         if ( true == jsforwp_vars.logged_in ) {
             article.append( getEditLink(), getDeleteLink() );
         }
-        appContainer.append( article );
+        appContainer.append( article );        
 
     }
 
