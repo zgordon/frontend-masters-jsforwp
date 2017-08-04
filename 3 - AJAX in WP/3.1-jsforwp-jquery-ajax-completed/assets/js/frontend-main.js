@@ -21,17 +21,13 @@
         _ajax_nonce: jsforwp_globals.nonce
       },
       success: function( response ) {
-
          if( 'success' == response.type ) {
-
            // Change the html() value to response.total_likes
             $(".jsforwp-count").html( response.total_likes );
-
          }
          else {
             alert( 'Something went wrong, try logging in!' );
          }
-
       }
     })
 
