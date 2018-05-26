@@ -1,8 +1,10 @@
 # Frontend Masters: JavaScript for WordPress Course
 
+![Zac teaching course at Frontend Masters workshop](https://cl.ly/rr42/Frontend%20Masters%20-%20Intro.png)
+
 ## Example Exercises
 
-Example files for Frontend Masters Class JavaScript for WordPress Course
+Example files for [Frontend Masters Course "JavaScript for WordPress"](https://frontendmasters.com/courses/javascript-wordpress/)
 
 1. Enqueuing JavaScript in a Theme
   - 1.1 PRACTICE ✔️ - Enqueuing JavaScript
