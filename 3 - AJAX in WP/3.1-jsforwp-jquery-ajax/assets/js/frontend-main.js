@@ -2,7 +2,7 @@
 
   $( '#secondary' ).prepend( '<p><a href="#like" class="btn jsforwp-like">Like This Site</a> <span class="jsforwp-count"></span> Likes</p>' );
 
-  // Change the html() value to response.total_likes
+  // Change the html() value to jsforwp_globals.total_likes
   $( '.jsforwp-count' ).html( 'Total # Here' );
 
   $('.jsforwp-like').click( function(){
